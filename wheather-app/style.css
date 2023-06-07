@@ -44,3 +44,19 @@
     #3494e6
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.text-result {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.text-result > p {
+  display: inline-block;
+  font-size: 25px;
+  margin: 0;
+}
+
+#sumaryText {
+  margin-left: 100px;
+}
