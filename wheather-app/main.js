@@ -13,10 +13,14 @@ const main = () => {
   getGeoCode(address)
     .then((res) => {
       // console.log(res);
-      return getWheather(res.lat, res.lng);
+      return getWheather(res.lat, res.lng); // trả về đối tượng promise call darksky
     })
-    .then((res) => {
-      console.log(res);
+    .then((resGetWheather) => {
+      // promise chain
+      console.log(resGetWheather);
+    })
+    .catch((err) => {
+      console.log(err);
     });
 };
 
